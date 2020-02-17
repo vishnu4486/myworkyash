@@ -1,0 +1,9 @@
+/* .yashHeader .nav{
+    display: inline-flex;
+} */
+.yashHeader .nav-link{
+    line-height: 60px;
+}
+.navBar{
+    border-bottom: 1px solid red;
+}

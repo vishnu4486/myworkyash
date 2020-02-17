@@ -1,0 +1,34 @@
+<p>Employee Details</p>
+
+<div *ngIf="employeeList.length>0; then thenBlock else elseBlock"></div>
+<ng-template #thenBlock>
+    <button class="btn btn-primary"> add New</button>
+    <table class="table table-bord">
+<thead>
+    <tr>
+        <th>Sr no</th>
+        <th>Code</th>
+        <th>Name</th>
+        <th>Gender</th>
+        <th>Date Of Birth</th>
+        <th>Action</th>
+    </tr>
+</thead>
+    <tbody>
+            <tr *ngFor='let e of employeeList; let i = index' >
+            <td>{{i+1}}</td>
+            <td>{{e.code | uppercase }}</td>
+            <!-- <td>{{e.name}}</td> -->
+            <td>{{e.name | empPipe:e.gender}}</td>
+            <!-- <td>{{e.gender}}</td> -->
+            <td>{{e.gender}}</td>
+            <td>{{e.dateOfBirth | date:'fullDate' | uppercase}}</td>
+            <td><button class="btn btn-success">Edit </button> <button class="btn btn-warning">Delete </button> </td>
+        </tr>
+    </tbody>
+</table></ng-template>
+<ng-template #elseBlock>
+
+    <h1>recorde not found</h1>
+</ng-template>
+

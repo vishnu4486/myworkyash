@@ -1,0 +1,10 @@
+.addForm label, .addForm input{
+    text-align: left;
+    width: 100%;
+}
+.addForm{
+    margin: 25px 0;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}

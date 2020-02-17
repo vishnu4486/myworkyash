@@ -1,0 +1,18 @@
+.colorClassGreem{
+    background-color: green;
+    display: block;
+}
+.colorClassRed{
+    background-color: red;
+    display: block;
+}
+.form_container{
+    margin: 10% auto;
+    width: 30%;
+    border: 1px solid #ccc;
+    padding: 40px;
+}
+span {
+    margin-right: 5px;
+    color: red;
+}

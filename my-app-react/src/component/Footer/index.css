@@ -1,0 +1,10 @@
+.yashFooter {
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+  }
+  .yashFooter h3{
+    line-height: 60px;
+    margin-bottom: 0;
+    }

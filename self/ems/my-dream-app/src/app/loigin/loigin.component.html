@@ -1,0 +1,12 @@
+<div class="form_container">
+    <form [formGroup]="formdata" (ngSubmit)="onClickSubmit(formdata.value)" >
+        <header>Login </header>
+            <label>Username <span>*</span></label>
+            <input type="text" name="username" formControlName="username" placeholder="Enter username ">
+            <div class="helph">At least 6 charter</div>
+            <label>Password <span>*</span></label>
+            <input type="password" class="forextbox" name="password"  formControlName="password"placeholder="Enter password" />
+         <button [class] = "formdata.valid ?'colorClassGreem': 'colorClassRed'" list
+         [disabled]="!formdata.valid" value="login"> login</button>
+    </form>
+</div>
